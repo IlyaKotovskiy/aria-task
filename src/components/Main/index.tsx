@@ -14,10 +14,10 @@ export const Main: React.FC = () => {
 	]
 
 	const usersComments: Array<UserCommentInterface> = [
-		{ id: 36842, img: '/images/comments/lorenzo.png', name: 'Lorenzo', user_name: '@lorenzo', comment: 'Amazing Telegram bot! Provides real-time crypto prices and news' },
-		{ id: 27850, img: '/images/comments/adalina.png', name: 'Adalina', user_name: '@ada', comment: 'Must-have bot for crypto traders. Accurate signals and analysis' },
-		{ id: 10682, img: '/images/comments/alexander.png', name: 'Alexander', user_name: '@alex_x', comment: 'Superb cryptocurrency bot! Quick updates and reliable data' },
-		{ id: 67392, img: '/images/comments/rushana.png', name: 'Rushana', user_name: '@Hana', comment: 'Efficient and user-friendly bot. Simplifies crypto trading tasks' },
+		{ id: 36842, img: `${import.meta.env.BASE_URL}/images/comments/lorenzo.png`, name: 'Lorenzo', user_name: '@lorenzo', comment: 'Amazing Telegram bot! Provides real-time crypto prices and news' },
+		{ id: 27850, img: `${import.meta.env.BASE_URL}/images/comments/adalina.png`, name: 'Adalina', user_name: '@ada', comment: 'Must-have bot for crypto traders. Accurate signals and analysis' },
+		{ id: 10682, img: `${import.meta.env.BASE_URL}/images/comments/alexander.png`, name: 'Alexander', user_name: '@alex_x', comment: 'Superb cryptocurrency bot! Quick updates and reliable data' },
+		{ id: 67392, img: `${import.meta.env.BASE_URL}/images/comments/rushana.png`, name: 'Rushana', user_name: '@Hana', comment: 'Efficient and user-friendly bot. Simplifies crypto trading tasks' },
 	]
 
 	return (
@@ -40,9 +40,9 @@ export const Main: React.FC = () => {
 				{usersComments.map(d => <UserComment {...d} />)}
 			</div>
 			<div className={s.cryptocurrencies}>
-				<img src="/images/cryptocurrency/Bitcoin.svg" alt="Bitcoim Image" />
-				<img src="/images/cryptocurrency/Litecoin.svg" alt="Litecoin Image" />
-				<img src="/images/cryptocurrency/Ethereum.svg" alt="Ethereum Image" />
+				<img src={import.meta.env.BASE_URL + '/images/cryptocurrency/Bitcoin.svg'} alt="Bitcoim Image" />
+				<img src={import.meta.env.BASE_URL + '/images/cryptocurrency/Litecoin.svg'} alt="Litecoin Image" />
+				<img src={import.meta.env.BASE_URL + '/images/cryptocurrency/Ethereum.svg'} alt="Ethereum Image" />
 			</div>
 		</section>
 	)

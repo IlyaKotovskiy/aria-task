@@ -9,9 +9,9 @@ export const OSComponent: React.FC<OSComponentProps> = ({ type }) => {
   const getImgSrc = () => {
     switch (type) {
       case 'android':
-        return '/images/os/android.svg';
+        return `${import.meta.env.BASE_URL}/images/os/android.svg`;
       case 'ios':
-        return '/images/os/ios.svg';
+        return `${import.meta.env.BASE_URL}/images/os/ios.svg`;
     }
   }
 
