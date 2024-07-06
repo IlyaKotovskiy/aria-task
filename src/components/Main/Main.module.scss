@@ -1,0 +1,154 @@
+section {
+  padding: 48px 62px 32px;
+  position: relative;
+}
+
+.main__title {
+  font-size: 84px;
+  color: var(--white100);
+  max-width: 1000px;
+  margin-bottom: 44px;
+  line-height: 100px;
+
+  span {
+    background-image: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.subscribe {
+  font-size: 34px;
+  color: var(--grey);
+  margin-bottom: 88px;
+}
+
+.counters {
+  display: flex;
+  gap: 130px;
+  margin-bottom: 100px;
+}
+
+.btn {
+  position: relative;
+  background: var(--gradient);
+  font-size: 28px;
+  line-height: 28px;
+  color: var(--black);
+  border-radius: 16px;
+  padding: 14px 0;
+  max-width: 532px;
+  width: 100%;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0px 0px 150px 0px #A5BFB46B;
+  margin-bottom: 76px;
+  transition: var(--transition);
+
+  &:hover {
+    color: var(--white100);
+  }
+}
+
+.os_wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.comments {
+  position: absolute;
+  top: 172px;
+  right: 82px;
+
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  :nth-child(odd) {
+    align-self: flex-end;
+  }  
+}
+
+.cryptocurrencies {
+  :nth-child(1n) {
+    position: absolute;
+    z-index: -1;
+    width: 312px;
+  }
+  :nth-child(1) {
+    top: 0;
+    right: 100px;
+  }
+  :nth-child(2) {
+    top: 277px;
+    right: 282px;
+  }
+  :nth-child(3) {
+    top: 508px;
+    right: 62px;
+  }
+}
+
+@media only screen and (max-width: 1210px) {
+  section {
+    padding: 20px 16px;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .main__title {
+    font-size: 40px;
+    line-height: 43px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .subscribe {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .counters {
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 28px;
+  }
+
+  .btn {
+    font-size: 20px;
+    padding: 10px 0;
+    margin-bottom: 18px;
+    box-shadow: 0px 0px 110px 0px #A5BFB452;
+  }
+
+  .os_wrapper {
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .comments {
+    display: none;
+  }
+
+  .cryptocurrencies {
+    :nth-child(1n) {
+      width: 140px;
+    }
+    :nth-child(1) {
+      top: 0;
+      right: 16px;
+    }
+    :nth-child(2) {
+      top: 70px;
+      right: unset;
+      left: 16px;
+    }
+    :nth-child(3) {
+      top: 203px;
+      right: 16px;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.wrapper {
+  background: #302D2D57;
+  color: var(--white40);
+  padding: 8px 16px;
+  border-radius: 12px;
+
+  display: flex;
+  gap: 8px;
+
+  max-width: 132px;
+  width: 100%;
+}
+
+.os_descr {
+  p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+  }
+
+  h4 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+
+@media only screen and (max-width: 1210px) {
+  .wrapper {
+    padding: 4px 8px;
+    max-width: 100px;
+
+    img {
+      width: 15px;
+    }
+  }
+  .os_descr {
+    p {
+      font-size: 10px;
+      line-height: 10px;
+    }
+  
+    h4 {
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+}

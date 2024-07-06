@@ -1,0 +1,35 @@
+.user {
+	background-color: var(--dark-grey34);
+	border: 1px solid #18311857;
+	border-radius: 20px;
+	color: var(--white100);
+
+	padding: 16px 20px;
+	max-width: 288px;
+}
+
+.user_inf {
+	margin-bottom: 16px;
+	display: flex;
+	gap: 18px;
+	align-items: center;
+
+	img {
+		width: 48px;
+	}
+
+	.name {
+		font-size: 18px;
+		font-weight: 600;
+		line-height: 24px;
+		text-transform: uppercase;
+	}
+
+	.user_name {
+		color: var(--white40);
+	}
+}
+
+.user_comment {
+	font-size: 18px;
+}

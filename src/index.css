@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+:root {
+  --white100: #F2F2F2;
+  --white30: #F2F2F24D;
+  --white40: #F2F2F266;
+  --black: #1C1A1A;
+  --grey: #828282;
+  --dark-grey34: #302D2D57;
+  --gradient: linear-gradient(92.01deg,
+      rgba(124, 111, 207, 0.97) 0%,
+      rgba(116, 174, 170, 0.95) 49.13%,
+      #6FCF97 100%);
+  --gradient20: linear-gradient(92.01deg,
+      rgba(124, 111, 207, 0.194) 0%,
+      rgba(116, 174, 170, 0.19) 49.13%,
+      rgba(111, 207, 151, 0.2) 100%);
+
+  --transition: .2s ease-in-out;
+}
+
+* {
+  font-family: "Teko", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+body {
+  background-color: var(--black);
+}

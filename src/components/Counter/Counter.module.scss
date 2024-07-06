@@ -1,0 +1,29 @@
+.counter {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--white100);
+
+  .value {
+    line-height: 48px;
+  }
+
+  .type {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--white30);
+  }
+}
+
+@media only screen and (max-width: 1210px) {
+  .counter {
+    .value {
+      font-size: 28px;
+      line-height: 28px;
+    }
+
+    .type {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}
